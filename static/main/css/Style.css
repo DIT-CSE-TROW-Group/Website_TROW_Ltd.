@@ -14,7 +14,7 @@ header {
 }
 body {
   display: block;
-  background-image: url("../img/background2.jpg");
+  background-image: url("../img/Background1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -217,11 +217,13 @@ nav .menu-icon span {
 
 .cuisines-category {
   padding: 0 10vw;
-  margin-left: 29%;
-  font-size: 30px;
-  font-weight: 800;
-  margin-bottom: 40px;
-  text-transform: capitalize;
+    /* margin-left: 29%; */
+    text-align: center;
+    font-size: 47px;
+    color: #e5edc7e6;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-transform: capitalize;
 }
 
 .cuisines-container {
@@ -264,7 +266,7 @@ nav .menu-icon span {
   object-fit: cover;
 }
 
-/* .discount-tag {
+.discount-tag {
   position: absolute;
   background: #fff;
   padding: 5px;
@@ -273,7 +275,7 @@ nav .menu-icon span {
   right: 10px;
   top: 10px;
   text-transform: capitalize;
-} */
+}
 
 .card-btn {
   position: absolute;

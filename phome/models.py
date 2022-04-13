@@ -13,8 +13,11 @@ def filepath(request, filename):
 
 class Cuisines_category(models.Model):
     name=models.CharField(null=True,max_length=50)
-    desp=models.CharField(default=None, null=True,max_length=500)
+    actual_price=models.CharField(default=None, null=True,max_length=50)
+    price_range=models.CharField(default=None, null=True,max_length=50)
+    extra_offer=models.CharField(default=None,null=True,max_length=100)
     image = models.ImageField(default=None, upload_to=filepath, null=True, blank=True)
+    discount=models.CharField(default=None, null=True,max_length=50)
     
     def __str__(self):
         return self.name
