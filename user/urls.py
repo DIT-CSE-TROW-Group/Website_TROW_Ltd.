@@ -9,5 +9,5 @@ urlpatterns = [
     path("login/", login ,name="login"),
     path("logout/", logout ,name="logout"),
     # path("aboutus/", home_views.aboutus ,name="aboutus"),
-    path("userprofile/", userprofile, name="userprofile"),
+    path("userprofile/<str:uid>", userprofile, name="userprofile"),
 ]

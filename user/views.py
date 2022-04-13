@@ -1,3 +1,4 @@
+from multiprocessing import context
 from django.forms import ValidationError
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect, render
@@ -61,8 +62,9 @@ def logout(request):
     return redirect('/')  
 
 @login_required(redirect_field_name='login')
-def userprofile(request):
-    return render(request,'user/userprofile.html')
+def userprofile(request,uid):
+    user=User.objects.get(id=uid)
+    return render(request,'user/userprofile.html',{'user_details':user})
     
       
         

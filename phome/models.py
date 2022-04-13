@@ -12,7 +12,10 @@ def filepath(request, filename):
     return os.path.join('admin/Cuisines_category', filename)
 
 class Cuisines_category(models.Model):
-    name=models.CharField(default=None, null=True,max_length=50)
+    name=models.CharField(null=True,max_length=50)
     desp=models.CharField(default=None, null=True,max_length=500)
     image = models.ImageField(default=None, upload_to=filepath, null=True, blank=True)
+    
+    def __str__(self):
+        return self.name
     
