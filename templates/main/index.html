@@ -28,7 +28,7 @@
         <div class="logo">Trow Ltd.</div>
         <div class="nav-items">
           <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
-          <li id="dropdown-menu"><a href="#"><i class="fa fa-caret-down"></i>Products</a>
+          <li id="dropdown-menu"><a href="#"><i class="fa fa-caret-down"></i>Product Category</a>
             <div class="categories">
               <ul>
                 <li><a href="#">Battery</a></li>
@@ -58,18 +58,6 @@
           {% endif %}
         </div>
 
-        <div class="search-icon">
-          <span class="fa-solid fa-magnifying-glass"></span>
-        </div>
-
-        <div class="cancel-icon">
-          <span class="fas fa-times"></span>
-        </div>
-
-        <form action="#">
-          <input type="search" class="search-data" placeholder="Search" required>
-          <button type="submit" class="fas fa-search"></button>
-        </form>
       </nav>
     </header>
     
@@ -96,7 +84,7 @@
       {% for cuisines_category in cuisines_categories %}
         <div class="cuisines-card">
             <div class="cuisines-image">
-              <span class="discount-tag">{{cuisines_category.discount}}% off</span>
+              <span class="discount-tag">{{cuisines_category.discount}} off</span>
               {% if cuisines_category.image %}
                 <img src="{{ cuisines_category.image.url }}" class="cuisines-thumb" alt="">
               {% else %}
@@ -105,9 +93,14 @@
                 <button class="card-btn">Buy</button>
             </div>
             <div class="cuisines-info">
-                <h2>{{cuisines_category.name}}</h2>
-                <span class="price">Price Range: {{cuisines_category.price}}</span><span class="actual-price">{{cuisines_category.actual_price}}</span>
-                <p class="cuisines-short-description">{{cuisines_category.extra_offer}}</p>
+                <h3>{{cuisines_category.name}}</h3>
+                <span class="price">Price Range: {{cuisines_category.price_range}}</span>
+                <span class="actual-price">Actual Price: {{cuisines_category.actual_price}}</span>
+                {% if cuisines_category.extra_offer %}
+                  <p class="cuisines-short-description">{{cuisines_category.extra_offer}}</p>
+                {% else %}
+                  <p class="cuisines-short-description">No extra offers available right now</p>
+                {% endif %}
             </div>
         </div>
       {% endfor %} 

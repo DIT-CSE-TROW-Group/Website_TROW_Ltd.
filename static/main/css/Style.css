@@ -220,7 +220,7 @@ nav .menu-icon span {
     /* margin-left: 29%; */
     text-align: center;
     font-size: 47px;
-    color: #e5edc7e6;
+    color: #183153;
     font-weight: 800;
     margin-bottom: 40px;
     text-transform: capitalize;
@@ -306,6 +306,7 @@ nav .menu-icon span {
 .cuisines-info {
   width: 100%;
   height: 100px;
+  padding-left: 3px;
 }
 .cuisines-info h2{
   text-align: center;
@@ -323,13 +324,16 @@ nav .menu-icon span {
 }
 
 .price {
-  font-weight: 900;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 17px;
+  display: flex;
 }
 
 .actual-price {
-  margin-left: 20px;
+  margin-left: 2px;
   opacity: 0.5;
+  font-size: 17px;
+  font-weight: 400;
   text-decoration: line-through;
 }
 

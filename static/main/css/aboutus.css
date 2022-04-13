@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 .aboutus-body{
-  background-image: url('../img/background5.jpg');
+  background-image: url('../img/background3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -7,22 +14,24 @@
 }
 .about-us
 {
-    width: 1500px;
-    padding: 20px;
-    margin: 8rem auto 0;
-    margin-bottom: 100px;
-    text-align: center;
-    
+  width: 78%;
+  padding: 20px;
+  margin: 8rem auto 0;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  text-align: start;
 }
 
 .about-us h1
 {
  padding: 0 0 1px;
- margin-top: 5px;
- margin-bottom: 1px;
- font-size: 50px;
- font-weight: 1000;
- color: #3B3B64;
+ margin-top: 2px;
+ margin-bottom: 5px;
+ font-size: 81px;
+ font-weight: bolder;
+ color: #183153;
+ text-align: center;
+ font-family: 'Merriweather', serif;
 }
 
 .about-us h2
@@ -33,7 +42,7 @@
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  color: rgba(50, 48, 48, 0.727);
+  color: #183153;
 }
 
 .inner-footer h3
@@ -105,3 +114,137 @@
   font-size: 18px;
   margin: 0;
 }
+.trow-desp{
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #f0f0f042;
+}
+.motive{
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #f0f0f042;
+}
+
+.team{
+  text-align: center;
+  position: relative;
+  margin: 1rem;
+}
+.team h1{
+  font-size: 81px;
+  font-weight: bolder;
+  color: #183153;
+  font-family: 'Merriweather', serif;
+}
+
+.container{
+  display: flex;
+  min-width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+.container .main-card{
+  display: flex;
+  height: 34rem;
+  width: 100%;
+  transition: 1s
+}
+.container .main-card .cards{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 0 20px; */
+}
+.main-card .cards .card{
+  width: 21rem;
+  background: rgb(255, 255, 255);
+  border-radius: 38px;
+  box-shadow: rgb(0 0 0 / 25%) 0px 5px 10px;
+  transition: all 0.4s ease 0s;
+  margin: 1rem 1rem;
+}
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.cards .card .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+  height: 22rem;
+    width: 21rem;
+    margin-bottom: 14px;
+    margin-top: -1px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+.card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content .job{
+  font-size: 20px;
+  color: #FF676D;
+}
+.card .content .media-icons{
+  margin-top: 10px;
+  display: flex;
+
+}
+.media-icons a{
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #FF676D;
+  transition: all 0.3s ease;
+}
+.media-icons a:hover{
+  color: #FF676D;
+  background-color: #fff;
+  border-color: #FF676D;
+}
+ .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active{
+  width: 35px;
+}
+/* @media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    width: 100%;
+  }
+} */
