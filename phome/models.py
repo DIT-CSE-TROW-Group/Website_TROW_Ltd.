@@ -17,7 +17,7 @@ class Cuisines_category(models.Model):
     price_range=models.CharField(default=None, null=True,max_length=50)
     extra_offer=models.CharField(default=None,null=True,blank=True,max_length=100)
     image = models.ImageField(default=None, upload_to=filepath, null=True, blank=True)
-    discount=models.CharField(default=None, null=True,max_length=50)
+    discount=models.CharField(default=0, null=True,max_length=50,blank=True)
     
     def __str__(self):
         return self.name

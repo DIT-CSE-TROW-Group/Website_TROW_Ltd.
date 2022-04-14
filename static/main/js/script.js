@@ -44,6 +44,8 @@ cuisibesContainers.forEach((item, i) => {
     })
 })
 
+
+
 const handleClick = (event) => {
   informationMessage.classList.remove("hidden");
   informationMessage.classList.add("visible");
