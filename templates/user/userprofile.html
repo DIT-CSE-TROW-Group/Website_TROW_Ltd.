@@ -20,39 +20,32 @@
             <span class="fas fa-bars"></span>
           </div>
           
-          <div class="logo">LaZeeZ.com</div>
+          <div class="logo">Trow Ltd.</div>
           <div class="nav-items">
             <li><a href="{% url 'index' %}"><i class="fa fa-home"></i>Home</a></li>
-            <li id="dropdown-menu"><a href="#"><i class="fa fa-caret-down"></i>Category</a>
+            <li id="dropdown-menu"><a href="#"><i class="fa fa-caret-down"></i>Product Category</a>
            <div class="categories">
              <ul>
-               <li><a href="#">Asian</a></li>
-               <li><a href="#">Chinese</a></li>
-               <li><a href="#">South Indian</a></li>
-               <li><a href="#">North India</a></li>
-               <li><a href="#">Italian</a></li>
-               <li><a href="#">American</a></li>
-               <li><a href="#">Mexican</a></li>
-               <li><a href="#">Kid-friendly</a></li>   
+                <li><a href="#">Battery</a></li>
+                <li><a href="#">Laptop Parts</a></li>
+                <li><a href="#">Air Conditioner</a></li>
+                <li><a href="#">Refrigrators</a></li>
+                <li><a href="#">Generator</a></li>
+                <li><a href="#">Motor</a></li>
+                <li><a href="#">SmartPhone</a></li>
+                <li><a href="#">Stablizer</a></li>
+                <li><a href="#">Fan</a></li>
+                <li><a href="#">Chips</a></li>
+                <li><a href="#">Router</a></li>
+                <li><a href="#">CCTV Camera</a></li>  
              </ul>
            </div></li>
-            <li><a href="#"><i class="fa fa-blog"></i>Post</a></li>
-            <li><a href="{% url 'aboutus' %}"><i class="fa fa-info"></i>About us</a></li>
+           <li><a href="#"><i class="fa fa-paper-plane"></i>Careers</a></li>
+           <li><a href="#"><i class="fa fa-phone"></i>Contact Us</a></li>
+           <li><a href="{% url 'aboutus' %}"><i class="fa fa-info"></i>About us</a></li>
             <li><a href="{% url 'logout' %}"><i class="fa fa-right-to-bracket"></i>Logout</a></li>
           </div>
      
-          <div class="search-icon">
-            <span class="fa-solid fa-magnifying-glass"></span>
-          </div>
-     
-          <div class="cancel-icon">
-            <span class="fas fa-times"></span>
-          </div>
-     
-          <form action="#">
-            <input type="search" class="search-data" placeholder="Find a recipe" required>
-            <button type="submit" class="fas fa-search"></button>
-          </form>
         </nav>
 </header>
 
@@ -66,7 +59,7 @@
             <div class="user-info">
                 <h2 class="username">{{user.first_name}} {{user.last_name}}</h2>
                 <div class="address">
-                    <p class="state">Uttarakhand,</p>
+                    <p class="state">Uttarakhand, </p>
                     <p class="country">India.</p>
                 </div>
             </div>
@@ -77,36 +70,33 @@
                 <div class="userbio">
                     <h4>About {{user.first_name}}</h4>
                     <p class="bio">
-                        Welcome to my kitchen
-                        Love cooking!!!!
-                        Food is Love.
+                        Welcome to Trow Group
+                        
                     </p>
                 </div>
-                <div class="chat">
+                {% comment %} <div class="chat">
                     <button class="chat-button">
                         <i style='font-size:24px' class='fa fa-comment'></i>
                         Let's Chat
                     </button>
                 </div>
-                
+                 {% endcomment %}
             </div>
             <div class="right">
                 <div class="profilenav">
                     <ul>
-                        <li onclick="tabs(0)" class="user-post active">Recipes</li>
-                        <li onclick="tabs(1)" class="user-review">Reviews</li>
+                        <li onclick="tabs(0)" class="user-post active">Orders</li>
+                        <li onclick="tabs(1)" class="user-review">Track Your Orders</li>
                     </ul>
                 </div>
                 <div class="profile-body">
                     <div class="P-post tab">
-                        <h1>Your Recipes</h1>
-                        <p>MY first Recipe.
+                        <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates nihil, id iure nemo repudiandae temporibus!
                         </p>
                     </div>
                     <div class="P-Review tab">
-                        <h1>YOUR REVIEW</h1>
-                        <p>MY Review.
+                        <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem itaque reiciendis reprehenderit odit, ratione illo!
                         </p>
                     </div>

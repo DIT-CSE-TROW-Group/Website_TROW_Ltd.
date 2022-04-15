@@ -20,6 +20,7 @@
   margin-bottom: 100px;
   margin-left: 20px;
   text-align: start;
+  
 }
 
 .about-us h1
@@ -30,7 +31,7 @@
  font-size: 81px;
  font-weight: bolder;
  color: #183153;
- text-align: center;
+ margin-left: 30px;
  font-family: 'Merriweather', serif;
 }
 
